@@ -40,9 +40,10 @@ const GetListForm = () => {
   return (
     <div className="container d-flex my-3">
       <div className="col-4">
-        {countries.map((country) => (
-          <div key={country.id}>
+        {countries.map((country, index) => (
+          <div key={index}>
             <GetListName
+              key={country.id}
               name={country.name}
               onClick={() => {
                 setSelectedCountryInfo(null);
