@@ -6,11 +6,7 @@ interface Props{
 }
 const GetListName: React.FC<Props> = ({name, onClick}) => {
   return (
-    <div className="row">
-      <div className="col-4 text-start">
-        <div onClick={onClick}>{name}</div>
-      </div>
-    </div>
+    <div onClick={onClick}>{name}</div>
   );
 };
 

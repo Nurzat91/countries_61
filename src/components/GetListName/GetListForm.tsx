@@ -38,8 +38,8 @@ const GetListForm = () => {
   };
 
   return (
-    <div className="container d-flex my-3">
-      <div className="col-4">
+    <div className="container d-flex my-3 shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+      <div className="col-4 ms-3 overflow-y-auto" style={{maxHeight: "600px", fontSize: "18px", cursor: "pointer"}}>
         {countries.map((country, index) => (
           <div key={index}>
             <GetListName
@@ -53,7 +53,7 @@ const GetListForm = () => {
           </div>
         ))}
       </div>
-      <div className="col-8">
+      <div className="col-8 ps-3">
         <CountriesInfoItem countryInfo={selectedCountryInfo} />
       </div>
     </div>
